@@ -1,0 +1,398 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box {
+  display: flex;
+  flex-direction: row;
+  border: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: background-color 0.2s;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.box-image {
+  flex: 1;
+  background-size: cover;
+  /* Set the desired height for the image container */
+  height: 600px; /* Adjust the height as needed */
+  margin: -50px -20px; /* Negative margins to extend image height upwards, downwards, and towards the right */
+  background-position: center right; /* Center the image vertically and position it at the right */
+}
+
+
+  
+  .box:nth-child(odd) {
+    background-color: #FFC107;
+  }
+  
+  .box:nth-child(even) {
+    background-color: #4CAF50;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+  
+  }
+  
+  .box-content {
+    flex: 1;
+    padding-right: 20px;
+ 
+  }
+  .box:nth-child(1) .box-image {
+    background-image: url('img donate.jpg');
+  }
+
+  .box:nth-child(2) .box-image {
+    background-image: url('img_donate_4-transformed.jpeg');
+  }
+
+  .box:nth-child(3) .box-image {
+    background-image: url('img_donate6-transformed.jpeg');
+  }
+
+  .box:nth-child(4) .box-image {
+    background-image: url('Screenshot 2023-09-29 221038.png');
+  }
+
+  .box:nth-child(5) .box-image {
+    background-image: url('shaking-hands-2499612_1920.jpg');
+  }
+  .box:nth-child(6) .box-image {
+    background-image: url('volunteer-652383_1920.jpg');
+  }
+  .box:nth-child(7) .box-image {
+    background-image: url('hunger-6255733_1920.png');
+  }
+  .box:nth-child(8) .box-image {
+    background-image: url('igg.jpeg');
+  }
+  
+ 
+/* Create an overlay pseudo-element */
+.box-image::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Position at the top of the box-image */
+  left: 0;
+  right: 0;
+  bottom: 0; /* Extend to the bottom of the box-image */
+  background-color: transparent; /* You can set a background color if desired */
+  opacity: 0; /* Make it transparent */
+  z-index: -1; /* Place it behind the background image */
+}
+
+
+  .image-container {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .curved-image {
+    width: 80%;
+    height: 400px;
+    
+  }
+  
+  
+ 
+
+
+.scroll-content {
+  animation: scroll-up 20s linear infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+ 
+
+  /*scrolling effect */
+.cont {
+  
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  animation: slideLeft 40s linear infinite; /* Adjust animation duration as needed */
+}
+
+.boll {
+  width: 20vw; /* Adjust box width */
+  margin-right: 10px; /* Add larger margin between boxes */
+  box-sizing: border-box;
+  flex-shrink: 0; /* Prevent boxes from shrinking in smaller screens */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boll img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Scale and crop the image to fit within the container */
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+    /* Adjust the speed by changing the cubic-bezier values */
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+  /* You can also add a custom animation duration here if needed */
+ /* animation-duration: 80s; */
+  /* Adjust the duration (40s) as needed */
+}
+
+/*back to top */
+/* Add or replace your existing CSS with this code */
+.back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px; /* Adjust the width to your preference */
+  height: 70px; /* Adjust the height to your preference */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Make the button circular */
+  cursor: pointer;
+  z-index: 999;
+  font-size: 22px; /* Adjust font size as needed */
+  line-height: 50px; /* Vertically center text */
+  text-align: center;
+  transition: background-color 0.3s ease-out;
+}
+
+.back-to-top-btn:hover {
+  background-color: #45a049;
+}
+.back-to-top-btn {
+
+  /* Rotate the content to point upwards */
+  transform: rotate(-90deg);
+}
+
+
+*
+{
+    margin:0;
+    padding:0;
+     
+}
+body
+{
+    background:#f2f2f2;
+}
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 50s slide infinite linear;
+}
+
+.logos{
+    overflow:hidden;
+    padding:60px 0;
+    background:white;
+    white-space:nowrap;
+    position:relative;
+    
+}
+.logos:before,
+.logos:after{
+   position:absolute;
+  top:0;
+  width:250px;
+  height:100%;
+  content:"";
+  z-index:2;
+
+}
+ .logos:before
+{
+  left:0; 
+  background:linear-gradient(to left,rgba(255,255,255,0),white);  
+}
+.logos:after
+{
+  right:0; 
+  background:red; 
+  background:linear-gradient(to right,rgba(255,255,255,0),white);   
+}
+
+/* Style for the logos images */
+.logos-slide img {
+  margin: 0 10px;
+  width: 700px; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
+  border-radius: 10px 50px 10px 50px;
+}
+
+.logos:hover .logos-slide
+{
+animation-play-state:paused;
+}
+
+h2,h3 {
+  font-family: Arial, sans-serif;
+  color: #333; /* Darker color */
+}
+
+/* Add this CSS to your existing styles */
+/* Define a keyframe animation called 'fade-in' */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Optional: Add a slight upward motion */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the box-content elements */
+.box-content {
+    animation: fade-in 0.5s ease-in-out; /* Adjust the animation duration and timing as needed */
+}
+
+/* Add a transition effect for smoother hover effects */
+.box-content:hover {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    color: #6d3b28; /* Change text color on hover (optional) */
+    transform: scale(1.05); /* Add a slight scale effect on hover (optional) */
+}
+/* Combine text and background color change with a scale effect on heading hover */
+.box-content h3:hover {
+    color: #ff5722; /* Text color on hover */
+    text-shadow: 2px 2px 4px #333; 
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transitions for color and background change */
+   
+}
+
+.box-content h2:hover {
+    color: #ff5722; /* Text color on hover */
+    /* Add text shadow on heading hover */
+
+    text-shadow: 2px 2px 4px #333; /* Change values for desired shadow effect */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transitions for color and background change */
+   
+}
+.box-content:hover {
+  text-shadow: 2px 2px 4px #658862;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+.team-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.team-member {
+  margin: 5px;
+  width: 200px;
+  height: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+.team-member:hover {
+  transform: scale(1.05);
+}
+.team-member-img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.team-member-details {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+.team-member:hover .team-member-details {
+  height: 50%;
+}
+.scroll-content {
+  animation: scroll-up 20s linear infinite;
+  display: flex;
+  flex-direction: column; /* Make it a column layout */
+  align-items: center; /* Center the content horizontally */
+  text-align: center; /* Center the text */
+  padding-top: 20px; /* Add some spacing between the heading and scrolling content */
+}
+
+.scroll-content h2 {
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333; /* Text color for the heading */
+}
+
+/* Add a separate keyframe animation to the scrolling content */
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Stop the animation for the scrolling content */
+.scroll-content {
+  animation-play-state: paused;
+}

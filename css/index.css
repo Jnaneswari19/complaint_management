@@ -1,0 +1,550 @@
+body{
+  overflow-x: hidden;
+}
+.navhover a{
+	
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.navhover a:hover,
+.navhover a.active{
+	background: #245990;
+	color: #fff;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.image {
+  width: 100%; /* Set the width to 100% to make them all the same width */
+  height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+}
+
+  /* Reset some default styles to avoid inconsistencies */
+  body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+ /* Style the header and navigation to provide sticky nav bar */
+.header {
+  height: 70px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1px;
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2;
+  z-index: 100;
+  border-bottom-left-radius:30px ;
+  border-bottom-right-radius: 30px;
+ 
+}
+
+
+.handimage
+{
+  padding: 0.1px 0px 0.1px 0px;
+}
+.aritaku
+{
+  padding: 0.9px 0px 0px 40px;
+  margin:0px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(23, 2, 92);
+  /*box-shadow:0px 10px 10px rgba(0,0, 0, 0.6);*/
+}
+
+.left-section  img {
+  height: 40px;
+}
+
+.left-section h1 {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 50px;
+}
+
+ 
+  
+  /* Style the Donate button */
+  .donate-button {
+    position: relative;
+    text-align: right;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  .donate-button a {
+    display: inline-block;
+    background-color: #d21309;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+/* Add underline effect on navigation links when hovered */
+.nav a {
+  position: relative;
+  color: inherit; /* To maintain original link color */
+}
+
+.nav a::after {
+  content: "";
+  width: 0%;
+  display: block;
+  margin: auto;  
+ /* position: absolute;
+  /*bottom: -2px; /* Adjust as needed */
+  /*left: 0;
+  */
+  border-bottom: 2px solid rgb(77, 230, 6); 
+  height: 2px;
+  /*background-color: rgb(77, 230, 6); /* Initial color (you can change this) */
+  transition:  0.3s ;
+}
+
+.nav a:hover::after {
+  width: 100%;
+ }
+/* Style the "Login" link as a button */
+.log a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:greenyellow;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+/*  transition: background-color 0.3s ease-out;*/
+}
+
+/*.log a:hover {
+  background-color: darkred; /* Darker color on hover */
+/*}*/
+/*body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the header and navigation */
+  /*.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .nav ul li a
+  {
+    text-decoration: none;
+    color : rgb(23, 2, 92);
+   /*box-shadow:0px 10px 10px rgba(0,0, 0, 0.6);*/
+  /*}
+
+  .left-section img {
+    height: 40px;
+  }
+  
+  .left-section h1 {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 50px;
+  }
+  .log{
+    display: inline-block;
+    background-color: #d21309;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  */
+  /* Style the Donate button */
+  
+  
+  .donate-button a {
+    display: inline-block;
+    background-color: #d21309;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Style the donation section */
+.donate-section {
+  padding: 30px;
+  background-color: white;
+  text-align: center;
+  
+}
+
+/* Style the donate box */
+.donate-box {
+ /* background-image: url("hungry heartspics\\pencilsketchhd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Adjust the background size as needed */
+  background-position: center; /* Center the background image */
+  background-color: rgba(0, 0, 0, 1.0);
+  border-radius: 15px;
+  padding: 20px;
+  height: 220px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.donate-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.donate-box p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.donate-box a {
+  display: inline-block;
+  background-color:  rgb(2, 117, 12);;
+  padding: 10px 20px;
+ /* padding-top: 20px;*/
+  margin-top: 10px;
+  margin-bottom: 0;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+}
+iframe {
+  margin-top: 20px;
+  border: 10px solid;
+  width: 80px;
+  /*max-width: 100%;*/
+
+  height: 50%;
+  /*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);*/
+  border-radius: 15px;
+  margin-left: 30px;
+  padding: 20px;
+  height: 220px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Center the iframe */
+/*iframe {
+  display: block;
+  margin: 0 auto;
+}
+/* Add styles for the donate content container */
+.donate-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+
+/*the below section is for hovered images*/
+.container {
+    width: 100vw; /* Set the container width to half of the viewport width */
+    height: 600px; /* Set the container height to half of the viewport height */
+    overflow: hidden;
+    position: relative;
+    /*border-radius:20px;*/
+  }
+
+  .box {
+    width: 100%; /* Box occupies full width of the container */
+    padding:40px;
+    height: 75%; /* Box occupies full height of the container */
+    margin: 10px 0;
+    background-color: green;
+    border: 1px solid #999;
+    border-radius: 15px; /* Add curved edges */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
+  }
+  
+  /*CSS grid */
+  .grid-container {
+      display: grid;
+      grid-template-columns:2fr 2fr;
+      gap: 20px;
+      grid-column-gap:15px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+   
+    
+
+/* Define the styles for the grid item */
+.grid-item {
+  padding: 20px;
+  background-color: #fff;
+  /*border-radius: 10px;*/
+  /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+  text-align: center;
+  margin: 20px auto;
+}
+
+/* Add styles for the title */
+.grid-item h2 {
+  font-size: 35px;
+  color: rgb(153, 210, 30);
+  margin-bottom: 20px;
+}
+
+/* Add styles for the content */
+.grid-item p {
+  font-size: 20px;
+  color: rgb(0, 255, 179);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Add styles for the link */
+.grid-item a {
+  text-decoration: dashed;
+}
+
+.grid-item con3 h2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.grid-item2 h2
+{
+  padding-top: 45px;
+  padding-bottom: 0;
+}
+.grid-item2 img
+{padding-top: 0;
+  margin-top: 0px;
+  
+}
+.grid3
+{background-image: url("../assets/volunteer-transformed12345.jpg");
+  border-radius: 15px;
+  margin: 0px 10px 50px 20px;
+  height: 600px;
+  width: 1485px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.grid31
+{background-image: url("hungry heartspics\\roadforbike.jpg");
+ 
+  border-radius: 15px;
+  margin: 0px 10px 50px 20px;
+  height: 600px;
+  width: 1485px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.grid31 marquee{
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 90px;
+}
+.typing-container {
+  display: inline-block;
+  
+}
+
+.typing-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: typing-text 4s linear infinite;
+}
+
+@keyframes typing-text {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
+/* Apply the cursor animation to a pseudo-element */
+.typing-text::after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: -8px; /* Adjust the right position for spacing */
+}
+
+ .bottom {
+      display: grid;
+      grid-template-columns:2fr 2fr;
+      gap: 20px;
+      border-radius:5px;
+      grid-column-gap:15px;
+      max-width: 100%;
+      margin: 0 auto;
+     
+      height:460px;
+
+       /* background-image: url("hungry heartspics\\dfnew-modified221.jpg"); /* Replace 'your-transparent-image-url.png' with the path to your transparent background image */
+        background-repeat: no-repeat;
+        background-size: cover; /* Adjust the background size as needed */
+        background-position: center; /* Center the background image */
+        background-color: rgba(0, 0, 0, 1.0);
+        color: white; /* Text color on the transparent background */
+    padding-top: 180px;
+    padding-left: 1000px;
+    padding-right: 100px;
+    }
+    
+    .social-icons {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color:black;
+        }
+        
+       .bot2
+  {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 30px;
+   color:black;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .bot1{
+    align-items: center;
+    margin:20px;
+    
+  }
+  .bot1 a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+  }
+
+  .don a {
+    display: inline-block;
+    background-color: #d21309;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+/*back button*/
+.back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px; /* Adjust the width to your preference */
+  height: 70px; /* Adjust the height to your preference */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Make the button circular */
+  cursor: pointer;
+  z-index: 999;
+  font-size: 22px; /* Adjust font size as needed */
+  line-height: 50px; /* Vertically center text */
+  text-align: center;
+  transition: background-color 0.3s ease-out;
+}
+
+.back-to-top-btn:hover {
+  background-color: #45a049;
+}
+.back-to-top-btn {
+
+  /* Rotate the content to point upwards */
+  transform: rotate(-90deg);
+}
+/*#button {
+  display: inline-block;
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: rgb(0, 255, 68);
+}
+#button:active {
+  background-color: rgb(0, 255, 217);
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+*/
+
+

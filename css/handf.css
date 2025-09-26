@@ -1,0 +1,216 @@
+.image {
+    width: 100%; /* Set the width to 100% to make them all the same width */
+    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+  }
+  
+    /* Reset some default styles to avoid inconsistencies */
+    body, ul, li, a {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+   /* Style the header and navigation to provide sticky nav bar */
+  .header {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1px;
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    z-index: 100;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px;
+   
+  }
+  
+  
+  .handimage
+  {
+    padding: 0.1px 0px 0.1px 0px;
+  }
+  .aritaku
+  {
+    padding: 0.9px 0px 0px 40px;
+    margin:0px;
+  }
+  .nav ul li a {
+    text-decoration: none;
+    color: rgb(23, 2, 92);
+    /*box-shadow:0px 10px 10px rgba(0,0, 0, 0.6);*/
+  }
+  
+  .left-section  img {
+    height: 40px;
+  }
+  
+  .left-section h1 {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 50px;
+  }
+  
+   
+    
+    /* Style the Donate button */
+    .donate-button {
+      position: relative;
+      text-align: right;
+      margin-top: 20px; /* Adjust the margin as needed */
+    }
+    
+    .donate-button a {
+      display: inline-block;
+      background-color: #d21309;
+      padding: 10px 20px;
+      border-radius: 15px;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  /* Add underline effect on navigation links when hovered */
+  .nav a {
+    position: relative;
+    color: inherit; /* To maintain original link color */
+  }
+  
+  .nav a::after {
+    content: "";
+    width: 0%;
+    display: block;
+    margin: auto;  
+   /* position: absolute;
+    /*bottom: -2px; /* Adjust as needed */
+    /*left: 0;
+    */
+    border-bottom: 2px solid rgb(77, 230, 6); 
+    height: 2px;
+    /*background-color: rgb(77, 230, 6); /* Initial color (you can change this) */
+    transition:  0.3s ;
+  }
+  
+  .nav a:hover::after {
+    width: 100%;
+   }
+  /* Style the "Login" link as a button */
+  .log a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:greenyellow;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+  /*  transition: background-color 0.3s ease-out;*/
+  }
+  
+  /**/*/*/**/
+  
+  
+    .bottom {
+      display: grid;
+      grid-template-columns:2fr 2fr;
+      gap: 20px;
+      border-radius:5px;
+      grid-column-gap:15px;
+      max-width: 100%;
+      margin: 0 auto;
+     
+      height:460px;
+  
+       /* background-image: url("hungry heartspics\\dfnew-modified221.jpg"); /* Replace 'your-transparent-image-url.png' with the path to your transparent background image */
+        background-repeat: no-repeat;
+        background-size: cover; /* Adjust the background size as needed */
+        background-position: center; /* Center the background image */
+        background-color: rgba(0, 0, 0, 1.0);
+        color: white; /* Text color on the transparent background */
+    padding-top: 180px;
+    padding-left: 1000px;
+    padding-right: 100px;
+    }
+    
+    .social-icons {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+  
+        .social-icons li {
+            display: inline;
+            margin-right: 10px;
+        }
+  
+        .social-icons a {
+            text-decoration: none;
+            color:black;
+        }
+        
+       .bot2
+  {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 30px;
+   color:black;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .bot1{
+    align-items: center;
+    margin:20px;
+    
+  }
+  .bot1 a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+  }
+  
+  .don a {
+    display: inline-block;
+    background-color: #d21309;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /*back button*/
+  .back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px; /* Adjust the width to your preference */
+  height: 70px; /* Adjust the height to your preference */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Make the button circular */
+  cursor: pointer;
+  z-index: 999;
+  font-size: 22px; /* Adjust font size as needed */
+  line-height: 50px; /* Vertically center text */
+  text-align: center;
+  transition: background-color 0.3s ease-out;
+  }
+  
+  .back-to-top-btn:hover {
+  background-color: #45a049;
+  }
+  .back-to-top-btn {
+  
+  /* Rotate the content to point upwards */
+  transform: rotate(-90deg);
+  }
+  

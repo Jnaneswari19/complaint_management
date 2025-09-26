@@ -1,0 +1,318 @@
+ 
+
+.container {
+    display: flex;
+  }
+  
+  .content-box:hover {
+    background-color: rgb(110, 179, 124);/* Apply a subtle box shadow on hover */
+  }
+  .aside {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .containerbox {
+    width: 300%;
+    height: 30vh;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .box {
+    width: 200vw; /* Adjust box width */
+    height: 40vw;
+    margin-right: 80px; /* Add larger margin between boxes */
+    background-image:url('oklo.jpg');
+    border: 1px solid #999;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+  }
+  /*
+  .section-container {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .section {
+    flex: 0 0 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  .section img{
+    height: 400px;
+  }
+  
+  .section:nth-child(odd) { background-color: #3498db; }
+  .section:nth-child(even) { background-color: #e74c3c; }*/
+  /*
+  .triangle-container {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    margin-left: 200px;
+    margin-right: 100px;
+    justify-content: space-between;
+  }
+  
+  .triangle {
+    cursor:pointer;
+    font-size: 170px;
+    color:solid black(80, 3, 80);
+  }
+  /* Apply background images to specific sections 
+  .section:nth-child(odd) {
+    background-image: url('img.jpg') ; /* Set the background image path for odd sections 
+    background-size: cover; /* Adjust the background image size as needed
+    background-repeat: no-repeat; /* Prevent the background image from repeating 
+    background-position: center; /* Center the background image 
+  }
+  
+  /*.section:nth-child(even) {
+    background-image: url('hai.jpg');  Set the background image path for even sections 
+    background-size: cover; Adjust the background image size as needed 
+    background-repeat: no-repeat;  Prevent the background image from repeating 
+    background-position: center; /* Center the background image 
+  }*/
+  
+  /* Style the images within the sections 
+  .section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    display: block;
+  }*/
+  .circle-container {
+    display: flex;
+    flex-direction: row; /* Display circles horizontally */
+    align-items: center;
+    text-align: center;
+  }
+  .circle-container .circle-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px; /* Add margin for space between circles */
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    border: 5px solid black;
+  }
+  .circle1 {
+    background-image: conic-gradient(#ff5733 0% 25%, transparent 25% 100%);
+  }
+  .circle2 {
+    background-image: conic-gradient(#5a2ea1 0% 50%, transparent 50% 100%);
+  }
+  .circle3 {
+    background-image: conic-gradient(#3385ff 0% 75%, transparent 75% 100%);
+  }
+  .circle4 {
+    background-image: conic-gradient(#ff33e7 0% 90%, transparent 90% 100%);
+  }
+  .circle-text {
+    margin-top: 10px;
+  }
+  
+  /* Apply background images to specific boxes */
+  .box:nth-child(1) {
+    background-image: url('a1.jpg');
+    width:400px;
+    height:500px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .box:nth-child(2) {
+    background-image: url('a1.jpg');
+    width:400px;
+    height:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .box:nth-child(3) {
+    background-image: url('abhi.jpg');
+    background-size: cover;
+    width:400px;
+    height:500px;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  
+  .box:nth-child(4) {
+    background-image: url('c1.jpg');
+    background-size: cover;
+    width: 400px;
+    height:500px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .box:nth-child(5) {
+    background-image: url('oklo.jpeg');
+    width:400px;
+    height:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .box:nth-child(6) {
+    background-image: url('jjk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .box:nth-child(7) {
+    background-image: url('d1.jpg');
+    width:400px;
+    height:800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .box:nth-child(8) {
+    background-image: url('oklo.jpeg');
+    width:400px;
+    height:700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .box:nth-child(9) {
+    background-image: url('oklo.jpeg');
+    width:400px;
+    height:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  @keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+  
+    to {
+        transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  
+  }
+  .logos-slide {
+      display: inline-block;
+      animation: 50s slide infinite linear;
+  }
+  
+  .logos:before,
+  .logos:after{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: red;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 80s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    margin: 0 10px;
+    width:500px;
+    height: 350px;
+    border-radius: 10px 50px 10px 50px;
+  
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  /* Define common styles for all boxes */
+  .box {
+    width: 400px;
+    height: 200px;
+    margin-right: 80px;
+    border: 2px solid bLack;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+  }
+   .typing-container {
+    display: inline-block;
+    
+  }
+  
+  .typing-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: typing-text 10S linear infinite;
+  }
+  
+  @keyframes typing-text {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+  }
+  
+  /* Apply the cursor animation to a pseudo-element */
+  .typing-text::after {
+    content: "|";
+    position: absolute;
+    top: 0;
+    right: -8px; /* Adjust the right position for spacing */
+  }
