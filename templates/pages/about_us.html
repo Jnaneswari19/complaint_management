@@ -1,0 +1,396 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hungry Hearts-About us</title>
+  <link rel="stylesheet" href="{% static 'css/something.css' %}">
+  <link rel="stylesheet" href="{% static 'css/handf.css' %}">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+  
+</head>
+
+<body>
+  <header class="header" style="background-color: #fff; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);">
+    <div class="left-section">
+
+      <div class="don" style="display: flex; flex-direction: column; ">
+        <p style="font-size: 24px; padding-left: 75px;">
+
+          <span style="color: rgb(2, 117, 12); padding: 0%;margin-top: 5px;font-size: 25px;">Hungry</span>
+          <span style="color: rgb(52, 221, 5);padding: 0%;margin: 0%;font-size: 25px;">Hearts</span><br><span
+            style="font-size: 10px;padding-left: 2px;color: rgb(2, 117, 12);font-family: Verdana, Geneva, Tahoma, sans-serif;">feed
+            hunger.. </span><span
+            style="color: rgb(52, 221, 5);font-size: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"> with your
+            heart</span>
+        </p>
+
+      </div>
+    </div>
+    </div>
+    <nav class="nav" style="display: flex;padding-right: 2px;margin-right: 2px; font-size: 13px;">
+      <ul>
+        <li><a href="{% url 'Home' %}"><span style="color: rgb(2, 117, 12);">🏠H</span><span
+              style="color:rgb(4, 12, 1)">ome</span></a></li>
+        <li><a href="{% url 'about' %}"><span style="color: rgb(2, 117, 12);">👤A</span><span
+              style="color: rgb(1, 4, 1);">bout Us</span></a></li>
+        <li><a href="{% url 'services' %}"><span style="color: rgb(2, 117, 12);">👥O</span><span
+              style="color: rgb(4, 9, 2);">ur Services</span></a></li>
+        <span>
+          <li style="background:  rgb(222, 108, 1); display: inline-block;  "><a href="{% url 'donatep' %}"><span
+                style="color:rgb(18, 2, 13)">👤Donatefood</span></a></li>
+        </span>
+        <li><a href="{% url 'contact' %}"><span style="color: rgb(2, 117, 12);">📞C</span><span
+              style="color:rgb(8, 13, 6)">ontact Us</span></a></li>
+        <li><a href="{% url 'complaint' %}"><span style="color: rgb(2, 117, 12);">C</span><span
+              style="color: rgb(4, 9, 2);">omplaint</span></a></li>
+
+      </ul>
+
+
+    </nav>
+    <nav class="log" style="margin:0;padding-left:90px;">
+      <li><a href="{% url 'join_w_us' %}">JOIN WITH US</a></li>
+    </nav>
+    <nav class="log" style="margin:0;padding-right:10px;">
+      <li><a href="{% url 'alllogin' %}">LOG IN</a></li>
+    </nav>
+  </header>
+
+
+  <!-- Your HTML content here -->
+  <div class="container">
+    <div class="box">
+      <div class="box-content">
+        <h2>Welcome to Our Online Food Donation Platform</h2>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+          Welcome to our online food donation platform, where we're on a mission to make a meaningful difference in our
+          community. We are a team of dedicated individuals who firmly believe that no one should ever have to endure
+          hunger, and we are determined to simplify the process of food donation, making it accessible to all.</p><br>
+
+        <h2>Bridging the Gap</h2>
+        <p style="font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> At our online food donation
+          platform, we serve as a crucial bridge between those with surplus food to share and those who are in need. Our
+          primary goal is to streamline the food donation process, making it hassle-free and convenient for donors from
+          all corners of the globe.
+        </p><br>
+        <br>
+        <h2>Effortless Donations, Powerful Impact</h2>
+        <p style="font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> We're here to make donating food
+          a breeze. Whether you're a restaurant owner, a grocery store manager, or a caring individual, we provide a
+          user-friendly platform for you to contribute food, no matter where you're located. Additionally, we offer
+          straightforward tools to help you track and manage your donations, so you can witness the tangible impact of
+          your generosity.</p>
+      </div>
+      <div class="box-image"></div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>Our Mission</h2>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">Our Mission
+          At <b>Hungry hearts</b>, our mission is crystal clear: to create a world where every person has access to
+          nutritious food.
+
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;"> We recognize that food insecurity
+          is an urgent global challenge, impacting millions of lives across the world. In response, we've developed this
+          online food donation platform with a singular aim—to bridge the gap between those with surplus food and those
+          experiencing hunger.</p>
+        <br>
+        <h3>
+          <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">Our platform empowers
+            individuals, organizations, and companies to make a difference by donating food to those in need.
+        </h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">We provide the essential
+          infrastructure for donations to be executed swiftly and securely. Simultaneously,
+          we serve as the vital link connecting donors with individuals and families facing food insecurity.</p>
+        </p>
+        <br>
+        <h3> Our commitment is to streamline the process of giving back, making it as easy and efficient as possible.
+        </h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">By eliminating barriers and
+          simplifying the act of generosity, we aspire to inspire more people to join our cause.
+
+          We envision a future where food insecurity is a thing of the past—a future where every person, regardless of
+          circumstances, has access to nourishing and wholesome meals. Our tireless efforts are dedicated to turning
+          this vision into reality, one meal at a time.</p>
+        </p>
+      </div>
+      <div class="box-image"></div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>How We Started</h2>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+          At Hungry hearts, our journey began with a simple yet profound realization: that no one in our community
+          should ever go to bed hungry. It was this belief in the power of compassion and community that led to the
+          creation of our food donating initiative.
+        </p>
+        <br>
+        <h2>The Spark of Inspiration</h2>
+
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;"> Our story starts with a group of
+          friends who shared a passion for making a positive impact in our community. We
+          were brought together by a common desire to address the pressing issue of food insecurity, a challenge that
+          affects far too many lives, even in our own neighborhoods.
+
+          One evening, as we gathered for a meal, we couldn't help but reflect on the abundance of food before us. It
+          was
+          a stark contrast to the heartbreaking stories we had heard of families struggling to put food on their tables.
+          We knew we had to do something.
+
+          Turning Empathy into Action
+          With a spark of empathy and a deep sense of responsibility, we set out to create a platform that would connect
+          those with surplus food to those in need. Our vision was simple but powerful: to bridge the gap between food
+          waste and hunger. We believed that by channeling excess food from restaurants, grocery stores, and individuals
+          to local shelters and families, we could make a real difference.
+
+        </p>
+        </p>
+      </div>
+      <div class="box-image"></div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>The First Steps</h2>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+          The journey wasn't easy, and it required the dedication and tireless efforts of a small team of volunteers. We
+          navigated through challenges, from finding partners who shared our vision to building the technological
+          infrastructure to support our cause.
+
+          Our first food donation event was a modest but heartwarming success. Seeing the smiles on the faces of those
+          we served reaffirmed our commitment to this mission. It was proof that even the smallest acts of kindness
+          could have a profound impact.</p>
+        <br>
+        <h2>Growing Together</h2>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+          As word spread and more people joined our cause, our humble initiative evolved into a full-fledged food
+          donating
+          website. Today, we're proud to have a thriving community of donors, volunteers, and supporters who share our
+          belief that no one should go hungry.
+
+          Our journey is far from over. With each day, we're inspired to do more, to reach more individuals and families
+          in need, and to continue making our community a better place for all.</p>
+        <br>
+        <h2> Join Us on Our Journey</h2>
+
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;"> We invite you to join us on this
+          incredible journey of compassion, generosity, and community. Together, we can
+          make a difference, one meal at a time. Whether you're a donor, a volunteer, or simply someone who cares, your
+          involvement is invaluable.
+
+          Thank you for being a part of our story. Together, we can create a future where hunger is a thing of the past.
+        </p>
+        </p>
+      </div>
+      <div class="box-image"></div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>Why Choose Us</h2>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+          A Commitment to Ending Hunger
+          At <b>Hungry hearts</b>, we understand that there are several options when it comes to donating food and
+          supporting charitable causes. So, why should you choose us? We're here to share a few compelling reasons:
+        </p><br>
+        <h3> Passion and Dedication</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+          We're not just another online platform; we're a team of passionate individuals who are genuinely committed to
+          making a difference. Our unwavering dedication to ending hunger in our community drives everything we do.</p>
+        <br>
+        <h3> Accessibility for All</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+          We believe that food donation should be accessible to everyone, regardless of location or means. Our platform
+          is
+          designed to make it easy for anyone, anywhere, to contribute to our cause, whether you're a business owner, a
+          community member, or an organization.</p>
+        <br>
+        <h3> Transparency and Accountability</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+          We take transparency seriously. When you donate food or funds through our platform, you can trust that your
+          contributions will be used efficiently and effectively to support those in need. We're committed to keeping
+          you
+          informed about the impact your generosity creates.</p>
+
+        </p>
+      </div>
+      <div class="box-image"></div>
+    </div>
+
+    <div class="box">
+      <div class="box-content">
+
+
+        <h3> Local Impact</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+          By collaborating with local food banks and organizations, we ensure that your donations have a direct and
+          immediate impact on our community. We're proud to support our neighbors in their times of need.</p>
+        <br>
+        <h3> Efficiency and Convenience</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;"> We know your time is valuable, and
+          we've designed our platform to be user-friendly and efficient. Donating food or funds takes just a few clicks,
+          allowing you to make a difference without unnecessary complexity.</p>
+        <br>
+        <h3> Community Partnership</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;"> We believe that ending hunger is a
+          collective effort. When you choose us, you become part of a larger community of like-minded individuals and
+          organizations dedicated to the same goal. Together, we amplify our impact.</p>
+        <br>
+        <h3> Proven Results</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">Our track record speaks for itself.
+          Over 10 years, we've facilitated countless food donations and helped countless individuals and families access
+          the nourishment they need. Your choice to support us contributes to this ongoing success story.</p>
+        </p>
+      </div>
+      <div class="box-image"></div>
+    </div>
+
+    <div class="box">
+      <div class="box-content">
+        <h2> Join Us in the Fight Against Hunger</h2>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;"> Choosing <b>Hungry Hearts </b> is
+          more than just a decision; it's a powerful choice to be a driving force in the battle against hunger. When you
+          become a part of our community, you contribute to a profound mission—a mission to eradicate hunger, foster
+          compassion, and create a brighter, more nourished future for all.</p>
+        <br>
+        <h3> How You Can Make a Difference</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;"> Here are some meaningful steps you
+          can take to actively participate in our mission:</p>
+        <br>
+        <h3> Donate Food</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">One of the simplest and most
+          impactful ways to get involved is by donating food. Whether you're an individual with surplus groceries, a
+          restaurant owner with excess ingredients, or a corporation with food supplies, your contributions can directly
+          impact the lives of those facing food insecurity. Our platform is designed to make the donation process
+          seamless and efficient.</p>
+        <br>
+        <h3> Spread the Word</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">Advocacy is a powerful tool in
+          raising awareness about food insecurity. By sharing our mission with your friends, family, and colleagues, you
+          amplify our reach and inspire others to join the cause. Use your voice on social media, at community events,
+          or within your workplace to advocate for those in need.</p>
+        <br>
+        <h3> Volunteer Your Time</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;"> If you have the time and energy to
+          spare, consider volunteering with us. Your hands-on involvement can make a significant difference in the
+          operations of our food donation efforts. From organizing food drives to assisting with distribution, your
+          commitment can have a tangible impact on those we serve.</p>
+      </div>
+      <div class="box-image"></div>
+    </div>
+
+    <div class="box">
+      <div class="box-content">
+        <h3> Financial Support</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">Financial contributions are vital
+          in sustaining our operations. Your donations help cover operational costs, logistics, and support the growth
+          of our platform. Every dollar counts and brings us one step closer to a hunger-free community.</p>
+        <br>
+        <h3> Engage Your Community</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;">Encourage your local community,
+          schools, places of worship, and businesses to get involved. By mobilizing those around you, you create a
+          collective force for good that can effect change on a broader scale.</p>
+        <br>
+        <h3> Advocate for Policy Change</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;"> Advocacy doesn't stop at
+          awareness; it extends to policy change. Get involved in advocating for policies and initiatives that address
+          the root causes of hunger and support food security at a systemic level.</p>
+        <br>
+        <h3> Together, We Make an Impact</h3>
+        <p style="font-size: 18px; font-family:Verdana, Geneva, Tahoma, sans-serif;"> By taking these steps, you become
+          an integral part of a compassionate community committed to tackling one of the most pressing issues of our
+          time. Together, we can make a lasting difference in the lives of those facing food insecurity. We envision a
+          brighter future where no one goes to bed hungry, and your choice to join us brings us one step closer to that
+          vision.</p>
+
+      </div>
+      <div class="box-image"></div>
+    </div>
+   
+    <div class="scroll-content">
+      <h2>The food you donate today will fill an empty stomach and bring a smile to a hungry face </h2> <!-- Add your desired heading text here -->
+    </div>
+    
+    <!-- <div class="logos">
+      <div class="logos-slide">
+        
+        
+        
+
+        <img src="img donate.jpg" alt="Image 11">
+
+      </div>
+      <div class="logos-slide">
+        <img src="img donate.jpg" alt="Image 1">
+        <img src="img_donate_4-transformed.jpeg" alt="Image 2">
+        <img src="img_donate6-transformed.jpeg" alt="Image 3">
+        <img src="Screenshot 2023-09-29 221038.png" alt="Image 4">
+        <img src="shaking-hands-2499612_1920.jpg" alt="Image 5">
+        <img src="volunteer-652383_1920.jpg" alt="Image 6">
+        <img src="hunger-6255733_1920.png" alt="Image 7">
+        <img src="igg.jpeg" alt="Image 8">
+
+        <img src="img donate.jpg" alt="Image 11">
+      </div> -->
+
+
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="{% static 'assets/img donate.jpg' %}" alt="Image 1">
+        <img src="{% static 'assets/img_donate_4-transformed.jpeg' %}" alt="Image 2">
+        <img src="{% static 'assets/img_donate6-transformed.jpeg' %}" alt="Image 1">
+        <img src="{% static 'assets/Screenshot 2023-09-29 221038.png' %}" alt="Image 2">
+        <img src="{% static 'assets/shaking-hands-2499612_1920.jpg' %}" alt="Image 1">
+        <img src="{% static 'assets/volunteer-652383_1920.jpg' %}" alt="Image 2">
+        <img src="{% static 'assets/img donate.jpg' %}" alt="Image 2">
+      </div>
+      <div class="logos-slide">
+        <img src="{% static 'assets/img donate.jpg' %}" alt="Image 1">
+        <img src="{% static 'assets/img_donate_4-transformed.jpeg' %}" alt="Image 2">
+        <img src="{% static 'assets/img_donate6-transformed.jpeg' %}" alt="Image 1">
+        <img src="{% static 'assets/Screenshot 2023-09-29 221038.png' %}" alt="Image 2">
+        <img src="{% static 'assets/shaking-hands-2499612_1920.jpg' %}" alt="Image 1">
+        <img src="{% static 'assets/volunteer-652383_1920.jpg' %}" alt="Image 2">
+        <img src="{% static 'assets/hunger-6255733_1920.png' %}" alt="Image 2">
+        <img src="{% static 'assets/igg.jpeg' %}" alt="Image 2">
+        <img src="{% static 'assets/img donate.jpg' %}" alt="Image 2">
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <div class="bottom" style="background-image: url('\\example1\\HUNGRY_HEARTS\\hungry heartspics\\dfnew-modified5.png');">
+    <div class="bot1" style="color: black;">
+      <a href="{% url 'about' %}">About Us</a></br></br>
+          <a href="{% url 'services' %}">Our Services</a><br><br>
+          <a href="{% url 'contact' %}">Contact Us</a>
+    </div>
+    <div class="bot2">
+      <h4>Follow Us on:</h4>
+      <ul class="social-icons">
+        <li><a href="https://www.instagram.com/your-instagram-page"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/your-facebook-page"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="mailto:youremail@example.com"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://twitter.com/your-twitter-page"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/your-youtube-page"><i class="fa fa-youtube"></i></a></li>
+      </ul></br></br>
+
+      <div class="don"><a href="{% url 'donatep' %}">Donate Now</a></a></div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
+</html>

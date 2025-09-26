@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Approval</title>
+</head>
+<body>
+    <nav><a href="{% url 'Adminview' %}">back</a></nav>
+    <h1>Ashram Approval Requests</h1>
+    <ul>
+        {% for ashram in ashrams_to_approve %}
+        <li>{{ ashram.name }} - {{ ashram.email }}
+            <a href="{% url 'approve_ashram' ashram.id %}">Approve</a>
+            <a href="{% url 'reject_ashram' ashram.id %}">Reject</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!-- approved_function_halls.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approved Function Halls</title>
+    
+</head>
+<body>
+    <h1>Approved Function Halls</h1>
+    <ul>
+        {% for hall in approved_Functionhall %}
+        <li>{{ hall.name }} - {{ hall.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approved_Date</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        section{
+            height: 650px;
+        }
+        header {
+            height: 70px;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+
+
+            padding: 0.1px;
+            position: sticky;
+            top: 0;
+            background-color: #f2f2f2;
+            z-index: 100;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        li {
+            background-color: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        li:nth-child(even) {
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="col-12 text-center ">
+        <h1 class="m-1">Approved Ashrams</h1>
+    </header>
+    <section class="col-12 d-flex">
+        <div class="col-4"></div>
+        <div class="col-4">
+
+            <ul>
+                {% for ashram in approved_ashrams %}
+                <li>{{ ashram.name }} - {{ ashram.email }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-4"></div>
+
+    </section>
+
+
+
+</body>
+
+</html>

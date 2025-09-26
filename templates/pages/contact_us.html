@@ -1,0 +1,270 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUNGRY HEARTS-contact us</title>
+ 
+    <link rel="stylesheet" href="{% static 'css/handf.css' %}">
+    <!--above common css for header and footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    
+    .container {
+            width: 50%;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 40px;
+           margin-bottom: 160px;
+           
+        }
+
+        .contact-container {
+            width: 50%;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            margin-top: 40px;
+        }
+
+        h2, h3 {
+            color: #e74c3c;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea, button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+    .container {
+        flex: 1;
+        padding-right: 20px;
+        background-color: #6de3f3;
+    }
+
+  </style>
+</head>
+<body>
+    
+    
+  <header class="header" style="background-color: #fff; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);" >
+    <div class="left-section">
+
+      <div class="don" style="display: flex; flex-direction: column; ">
+        <p style="font-size: 24px; padding-left: 75px;">
+          <!--<img class="handimage" src="\example1\HUNGRY_HEARTS\hungry heartspics\icon2-removebg-preview-transformed.png" alt="Hungry Hearts Icon"
+            height="30px" width="30px" style="margin-top: 8px;">-->
+
+          <span style="color: rgb(2, 117, 12); padding: 0%;margin-top: 5px;font-size: 25px;">Hungry</span>
+          <span style="color: rgb(52, 221, 5);padding: 0%;margin: 0%;font-size: 25px;">Hearts</span><br><span style="font-size: 10px;padding-left: 2px;color: rgb(2, 117, 12);font-family: Verdana, Geneva, Tahoma, sans-serif;">feed hunger.. </span><span style="color: rgb(52, 221, 5);font-size: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"> with your heart</span>
+        </p>
+      <!--  <img class="aritaku"
+          src="C:\Users\charankumar\OneDrive\Desktop\hungry hearts\hungry heartspics\icon4-removebg-preview.png"
+          alt="Hungry Hearts Icon" height="30px" width="300px">-->
+      </div>
+    </div>
+    </div>
+    <nav class="nav" style="display: flex;padding-right: 2px;margin-right: 2px; font-size: 13px;">
+      <ul>
+        <li><a href="{% url 'Home' %}"><span style="color: rgb(2, 117, 12);">🏠H</span><span
+              style="color:rgb(4, 12, 1)">ome</span></a></li>
+        <li><a href="{% url 'about' %}"><span style="color: rgb(2, 117, 12);">👤A</span><span
+              style="color: rgb(1, 4, 1);">bout Us</span></a></li>
+        <li><a href="{% url 'services' %}"><span style="color: rgb(2, 117, 12);">👥O</span><span
+              style="color: rgb(4, 9, 2);">ur Services</span></a></li>
+        <span>
+          <li style="background:  rgb(222, 108, 1); display: inline-block;  "><a href="{% url 'donatep' %}"><span
+                style="color:rgb(18, 2, 13)">👤Donatefood</span></a></li>
+        </span>
+        <li><a href="{% url 'contact' %}"><span style="color: rgb(2, 117, 12);">📞C</span><span
+              style="color:rgb(8, 13, 6)">ontact Us</span></a></li>
+        <li><a href="{% url 'complaint' %}"><span style="color: rgb(2, 117, 12);">C</span><span
+              style="color: rgb(4, 9, 2);">omplaint</span></a></li>
+
+      </ul>
+
+
+    </nav>
+    <nav class="log" style="margin:0;padding-left:90px;">
+      <li><a href="{% url 'join_w_us' %}">JOIN WITH US</a></li>
+    </nav>
+    <nav class="log" style="margin:0;padding-right:10px;">
+      <li><a href="{% url 'alllogin' %}">LOG IN</a></li>
+    </nav>
+  </header>  
+    
+     
+<div class="contact-container">
+        
+  <h2 style="color: #e74c3c;">CONTACT DETAILS</h2>
+  <div class="contact-details">
+    <h4><i class="fas fa-mobile-alt icon" style="color: #3498db;"></i> Mobile</h4>
+      <p>Phone No: <a href="tel:9553995857" style="color: #3498db;">9553995853</a></p>
+      <h4><i class="fab fa-instagram icon" style="color: #e67e22;"></i> Instagram</h4>
+      <p>Insta ID: <a href="https://www.instagram.com/HUNGRY__HEARTS__2124/" target="_blank" style="color: #e67e22;">HUNGRY_HEARTS_OFFICIAL</a></p>
+      <h4><i class="fas fa-envelope icon" style="color: #e74c3c;"></i> G-MAIL</h4>
+      <p>Mail: <a href="mailto:hungryhearts84@gmail.com" style="color: #e74c3c;">hungry_hearts</a></p>
+      <h4><i class="fab fa-facebook-f icon" style="color: #1877f2;"></i> Facebook</h4>
+        <p>Profile: <a href="https://www.facebook.com/profile.php?id=61552580364624&mibextid=ZbWKwL" target="_blank" style="color: #1877f2;">hungry hearts</a></p>
+    
+    </div>
+</div>
+<div class="container">
+  <form onsubmit="sendEmail(); reset(); return false; ">
+<h2 style="color: #e74c3c;">
+YOUR FEEDBACK
+</h2>
+<input type="text" style="color: rgb(2, 117, 12);" id="name" placeholder="Your name" required>
+<input type="email" style="color:#e74c3c;" id="email" placeholder="email" required>
+<input type="text" style="color: #3498db;" id="phone" placeholder="ph_no" required>
+<textarea style="color: #ff6b51;"" id="message" cols="30" rows="10" placeholder="Enter your feed back!"></textarea>
+<button type="submit">send</button>    
+</div>
+</form> 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+ <script>
+function sendEmail()
+{ 
+const name=document.getElementById("name");
+
+const email=document.getElementById("email");
+
+const phone=document.getElementById("phone");
+
+const message=document.getElementById("message");
+let ebody=`
+<b>name:</b>${name.value}
+<br>
+<b>email</b>${email.value}
+<br>
+<b>phone</b>${phone.value}
+<br>
+<b>text area</b>${message.value}`
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "charansarlani1996@gmail.com",
+    Password : "516D7C9A9C6AB3F2A4D3B67EA8A79575E7C6",
+    To : 'charansarlani1996@gmail.com',
+    From : "charansarlani1996@gmail.com",
+    Subject : "This is the subject"+email.value,
+    Body : ebody
+}).then(
+  message => alert(message)
+);
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bottom" style="background-image: url('../static/assets/dfnew-modified5.png');">
+    <div class="bot1" style="color: black;">
+      <a href="{% url 'about' %}">About Us</a></br></br>
+      <a href="{% url 'services' %}">Our Services</a><br><br>
+      <a href="{% url 'contact' %}">Contact Us</a>
+    </div>
+    <div class="bot2">
+      <h4>Follow Us on:</h4>
+      <ul class="social-icons">
+        <li><a href="https://www.instagram.com/your-instagram-page"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/your-facebook-page"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="mailto:youremail@example.com"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://twitter.com/your-twitter-page"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/your-youtube-page"><i class="fa fa-youtube"></i></a></li>
+      </ul></br></br>
+
+      <div class="don"><a href="{% url 'donatep' %}">Donate Now</a></a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="pop-up-container">
+    <button id="backToTopBtn" class="back-to-top-btn">>></button>
+  </div>
+  <script>
+    const container = document.querySelector('.container');//change class names 
+    const boxes = document.querySelectorAll('.box');//change class name according to current page
+    let currentIndex = 0;
+
+    function slideBoxes() {
+      boxes[currentIndex].style.opacity = 0;
+      currentIndex = (currentIndex + 1) % boxes.length;
+      boxes[currentIndex].style.opacity = 1;
+      setTimeout(slideBoxes, 3000); // Change box every 3 seconds
+    }
+
+    boxes[currentIndex].style.opacity = 1; // Show the first box
+    setTimeout(slideBoxes, 3000); // Start the sliding animation
+
+
+    // back to top
+    document.addEventListener("DOMContentLoaded", function () {
+      const backToTopBtn = document.getElementById("backToTopBtn");
+
+      // Show or hide the button based on scroll position
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      });
+
+      // Scroll to the top smoothly when the button is clicked
+      backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    });
+
+
+  </script>
+ 
+</body>
+</html>

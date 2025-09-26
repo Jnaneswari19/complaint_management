@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money Donation Success</title>
+</head>
+<body>
+    <h1>Thank You for Your Money Donation!</h1>
+ <h2>Recent Money Donations:</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Number</th>
+            <th>Amount</th>
+            <th>Address</th>
+        </tr>
+        {% for donation in donations %}
+        <tr>
+            <td>{{ donation.name }}</td>
+            <td>{{ donation.email }}</td>
+            <td>{{ donation.number }}</td>
+            <td>{{ donation.amount }}</td>
+            <td>{{ donation.address }}</td>
+        </tr>
+        {% endfor %}
+    </table> 
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <title>Money Donation Success</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        section {
+            height: 700px;
+        }
+
+        .s {
+            height: 25%;
+        }
+
+        .ss {
+            height: 50%;
+        }
+        button{
+            border: 3px solid red;
+            padding-left: 25px;
+            padding-right: 25px;
+        
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="col-12">
+        <div class="col-12 s"></div>
+        <div class="col-12 ss d-flex text-center mt-5">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="col-12">
+                    <h1>Thank You for Your Money Donation!</h1>
+                </div>
+                <div class="col-12">
+                    <button type="submit"><a href="{% url 'donatebuttons' %}">OK</a></button>
+                </div>
+            </div>
+            <div class="col-2"></div>
+
+        </div>
+        <div class="col-12 s"></div>
+
+
+    </section>
+
+</body>
+
+</html>

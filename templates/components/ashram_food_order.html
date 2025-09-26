@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashram Food Order</title>
+</head>
+<body>
+    <h1>Ashram Food Order</h1>
+    <p>Total Donated Food Quantity: {{ total_quantity }}</p>
+    <form action="{% url 'ashram_food_order' %}" method="post">
+        {% csrf_token %}
+    <input type="text" name="quantity" id="">
+    <input type="submit" name="" id="" value="Order">
+    </form>
+    <!-- <button><a href="{% url 'ashram_food_order' %}">Order</a></button> -->
+</body>
+</html>

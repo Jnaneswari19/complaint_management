@@ -1,0 +1,297 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hungry Hearts-Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <style>
+    /* styles.css */
+    .dialog {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .dialog-content {
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header" style="background-color: #fff; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);">
+    <div class="left-section">
+
+      <div class="don" style="display: flex; flex-direction: column; ">
+        <p style="font-size: 24px; padding-left: 75px;">
+
+          <span style="color: rgb(2, 117, 12); padding: 0%;margin-top: 5px;font-size: 25px;">Hungry</span>
+          <span style="color: rgb(52, 221, 5);padding: 0%;margin: 0%;font-size: 25px;">Hearts</span><br><span
+            style="font-size: 10px;padding-left: 2px;color: rgb(2, 117, 12);font-family: Verdana, Geneva, Tahoma, sans-serif;">feed
+            hunger.. </span><span
+            style="color: rgb(52, 221, 5);font-size: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"> with your
+            heart</span>
+        </p>
+
+      </div>
+    </div>
+    </div>
+    <nav class="nav" style="display: flex;padding-right: 2px;margin-right: 2px; font-size: 13px;">
+      <ul>
+        <li><a href="{% url 'Home' %}"><span style="color: rgb(2, 117, 12);">🏠H</span><span
+              style="color:rgb(4, 12, 1)">ome</span></a></li>
+        <li><a href="{% url 'about' %}"><span style="color: rgb(2, 117, 12);">👤A</span><span
+              style="color: rgb(1, 4, 1);">bout Us</span></a></li>
+        <li><a href="{% url 'services' %}"><span style="color: rgb(2, 117, 12);">👥O</span><span
+              style="color: rgb(4, 9, 2);">ur Services</span></a></li>
+        <span>
+          <li style="background:  rgb(222, 108, 1); display: inline-block;  "><a href="{% url 'donatep' %}"><span
+                style="color:rgb(18, 2, 13)">👤Donatefood</span></a></li>
+        </span>
+        <li><a href="{% url 'contact' %}"><span style="color: rgb(2, 117, 12);">📞C</span><span
+              style="color:rgb(8, 13, 6)">ontact Us</span></a></li>
+        <li><a href="{% url 'complaint' %}"><span style="color: rgb(2, 117, 12);">C</span><span
+              style="color: rgb(4, 9, 2);">omplaint</span></a></li>
+
+      </ul>
+
+
+    </nav>
+    <nav class="log" style="margin:0;padding-left:90px;">
+      <li><a href="{% url 'join_w_us' %}">JOIN WITH US</a></li>
+    </nav>
+    <nav class="log" style="margin:0;padding-right:10px;">
+      <li><a href="{% url 'alllogin' %}">LOG IN</a></li>
+    </nav>
+  </header>
+
+  <br>
+
+
+  <div class="container">
+    <div class="box"><img src="{% static 'assets/thumbnail123.jpg' %}" alt="1st imgae"></div>
+    <div class="box"><img src="{% static 'assets/fooddonate-transformed.webp' %}" alt="2nd image"></div>
+    <div class="box"><img src="{% static 'assets/Mother-Teresa-Quote-on-Charity123.png' %}" alt="3rd image"></div>
+    <div class="box"><img src="{% static 'assets/donatemod123.jpg' %}" alt="3rd image"></div>
+
+    <!-- Add more boxes as needed -->
+  </div>
+
+  <section id="donate" class="donate-section">
+    <div class="donate-box" style="background-color: aqua;">
+      <h2 style="color:  rgb(2, 117, 12); font-size: 40px;">#SUPPORTHUNGRYHEARTS </h2>
+      <p>FOR THE FIRST TIME WE ARE ACCEPTING LIVE DONATIONS</p>
+      <p style="color:  rgb(52, 221, 5);"></p>
+      <a href="{% url 'donatep' %}">Donate Now</a>
+    </div>
+  </section>
+  <div class="stat" style='width: 100%;'>
+    <div style="display: flex; flex-direction: row;">
+      <div>
+        <iframe
+          src='https://www.theworldcounts.com/embeds/counters/2?background_color=white&color=rgb(3, 157, 16)&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=34'
+          style='color: rgb(2, 159, 164); border: none; width: 550px; justify-content: center; margin-right: 100px; background-color: aquamarine;'></iframe>
+      </div>
+      <div
+        style="margin-left: 1px; background-image: url('\example1\HUNGRY_HEARTS\hungry heartspics\icon2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; ">
+        <iframe
+          src='https://www.theworldcounts.com/embeds/counters/101?background_color=white&color=rgb(3, 157, 16)&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=34'
+          style='border: none; width: 550px; justify-content: center; margin-right: 100px;background-color: aquamarine;'></iframe>
+      </div>
+    </div>
+    <!--Applying css grid-->
+    <div class="grid-container" style="background-color: #e8f0fe;">
+
+      <div class="grid-item" style="background-color: #e8f0fe;">
+        <h2
+          style="font-size:35px; color: rgb(2, 117, 12);font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
+          class="con"><span class="typing-container"><span class="typing-text">The power of giving...</span></span></h2>
+        <p style="font-size: 20px; color: rgb(86, 131, 3); font-family: Arial, Helvetica, sans-serif;"><br><br><br>The
+          world is unfortunately divided amongst those who have plenty and those who struggle in scarcity.
+          <br><br>
+          Food being the basic need of a human body, we as a society need to ensure that it is distributed and made
+          available to those in need.
+          Food donation is a great way to help those in need and make a positive impact on the world.
+          <br><br>
+
+          Food donation can have a wide range of benefits, from improving the health and wellbeing of
+          children to reducing the amount of child labor in developing countries.
+          <br>
+          <br>Imagine the joy in a child's eyes when they receive a meal they otherwise wouldn't have had. This is the
+          magic of food donation - it's not just about filling stomachs.
+          it's about filling hearts. <br><a href="{% url 'about' %}" style="text-decoration: dashed;">know more !!</a>
+        </p>
+      </div>
+      <div class="grid-item2">
+        <h2 style="font-size: 35px; color: rgb(2, 117, 12); text-align: center;" class="con2"><span
+            class="typing-text"></span></h2><br>
+        <img src="{% static 'assets/smile.png' %}" height="70%" width="95%" alt="image">
+      </div>
+
+      <div class="grid-item3">
+        <h2 class="con3"
+          style="font-size:35px; color: rgb(2, 117, 12);font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          <span class="typing-text">Who We Are ?</span>
+        </h2>
+        <img src="{% static 'assets/whowe-removebg.png' %}" height="70%" width="95%" alt="donate">
+      </div>
+      <div class="grid-item4">
+        <h2 class="con3" style="font-size:35px"></h2><br><br><br>
+        <p style="font-size: 22px; color: rgb(5, 85, 105);">Welcome to "Hungry Hearts", a platform driven by a deep
+          passion for making a positive change in the world. <br><br>At our core, we believe that every individual can
+          make a significant impact by joining hands and sharing the abundance of food with those in need. Here's a
+          glimpse into who we are and what drives us to promote food donation as a way of life.
+          <br><br>
+          Our Mission:
+          We are a dedicated team of individuals who have come together with a common mission: to end hunger, one meal
+          at a time. Our mission is not just about providing sustenance; it's about nourishing the spirit of compassion
+          and generosity that resides in every heart.
+          <br><br><a href="{% url 'about' %}">know more about us!</a>
+        </p>
+      </div>
+
+
+      <div class="grid-item5">
+        <h2 class="con3"
+          style=" color: rgb(2, 117, 12);font-size: 35px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          <span class="typing-text">How to donate ?</span></h2>
+        <p
+          style="font-size: 18px; color: rgb(5, 221, 149);font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          Our mission is simple yet profound: To bridge the gap between surplus food and those with empty stomachs .
+
+          <br>
+          <br><b style=" color: rgb(2, 117, 12);">step 1</b><br>
+          Register on our page <br><br>
+          <b style=" color: rgb(2, 117, 12);">step 2</b><br><b>Donate food through our website!!</b><br><br>
+          <b>Beyond Food, Beyond Borders</b>
+          <br>We don't just stop at collecting food. Hungry Hearts also accepts monetary donations.
+          <br>These funds are put to good use, purchasing food items that are then donated to Ashrams and similar
+          organizations. <br>
+          Your financial support ensures that those in need receive nourishment, and every penny is utilized
+          efficiently.
+          <br><br> <b style=" color: rgb(2, 117, 12);">step 3</b><br>
+          get a thank u note from consumers
+        </p>
+      </div>
+      <div class="grid-item3">
+        <h2 class="con3"><img src="{% static 'assets/truck-delivery-service.gif' %}" alt="image" height="75%"
+            width="98%">
+        </h2>
+        <p> </p>
+      </div>
+
+
+
+    </div>
+    <div class="grid3" style="background-image: url('../static/assets/volunteers.png');">
+
+    </div>
+
+    <div class="grid31" style="background-image: url('../static/assets/roadforbike.jpg');">
+      <br>
+      <span style="padding-left: 20px; color:white; padding-bottom: 0%; margin-bottom: 0%;" class="typing-text">
+        <h1
+          style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          your donation is reaching to the place ...<br> where we hear the silence of hunger .........</h1>
+      </span>
+      <marquee direction="right" behavior="loop" scrollamount="20" onmouseover="stop();" onmouseout="start();"
+        heigth="1px">
+        <img src="{% static 'assets/foodbikebg.gif' %}">
+
+      </marquee>
+
+    </div>
+    <br><br><br>
+    <div class="bottom" style="background-image: url('../static/assets/dfnew-modified5.png');">
+      <div class="bot1" style="color: black;">
+        <a href="{% url 'about' %}">About Us</a></br></br>
+          <a href="{% url 'services' %}">Our Services</a><br><br>
+          <a href="{% url 'contact' %}">Contact Us</a>
+      </div>
+      <div class="bot2">
+        <h4>Follow Us on:</h4>
+        <ul class="social-icons">
+          <li><a href="https://www.instagram.com/your-instagram-page"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/your-facebook-page"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="mailto:youremail@example.com"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="https://twitter.com/your-twitter-page"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/your-youtube-page"><i class="fa fa-youtube"></i></a></li>
+        </ul></br></br>
+
+        <div class="don"><a href="{% url 'donatep' %}">Donate Now</a></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="pop-up-container">
+    <button id="backToTopBtn" class="back-to-top-btn">>></button>
+  </div>
+  <script>
+    const container = document.querySelector('.container');
+    const boxes = document.querySelectorAll('.box');
+    let currentIndex = 0;
+
+    function slideBoxes() {
+      boxes[currentIndex].style.opacity = 0;
+      currentIndex = (currentIndex + 1) % boxes.length;
+      boxes[currentIndex].style.opacity = 1;
+      setTimeout(slideBoxes, 3000); // Change box every 3 seconds
+    }
+
+    boxes[currentIndex].style.opacity = 1; // Show the first box
+    setTimeout(slideBoxes, 3000); // Start the sliding animation
+
+
+    // back to top
+    document.addEventListener("DOMContentLoaded", function () {
+      const backToTopBtn = document.getElementById("backToTopBtn");
+
+      // Show or hide the button based on scroll position
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      });
+
+      // Scroll to the top smoothly when the button is clicked
+      backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    });
+
+
+  </script>
+
+
+</body>
+
+</html>

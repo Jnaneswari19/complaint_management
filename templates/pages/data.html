@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>HUNGRY HEARTS-Admin</title>
+    
+  <style>
+    body{
+        height: 700px;
+    }
+
+    .but{
+        height: 570px;
+    }
+    
+        .mm{
+            height: 50%;
+            padding-top: 100px;
+        }
+        .m{
+            height: 50%;
+        }
+       
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 25px;
+            border: 2px solid #2e2d2d;
+            background-color: rgb(184, 249, 245);
+            cursor: pointer;
+            margin: 50px;
+            color: #e36414;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: 0.5s;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background: #a5f1f6;
+            color: #000000;
+            scale: 105%;
+            
+        }
+        header {
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+        }
+        .ancher{
+            text-decoration: none;
+            border-style:groove;
+            border-radius: 5px;
+        
+            color: #e36414;
+            background-color: rgb(183, 255, 191);
+            
+        }
+        .ancher:hover{
+            background: #a5f1f6;
+            color: #000000;
+            scale: 105%;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+       
+        /* .hed{
+        height: 7%;
+        background-color: rgb(157, 246, 246);
+        padding-top: 10px;
+        } */
+  </style>
+</head>
+<body>
+    
+    <header class="col-12 hed d-flex">
+        <div class="col-3"></div>
+        
+        <div class="col-6 h">
+            <h1>Data</h1>
+        </div>
+        <div class="col-3 h1">
+            <a class="ancher" href="{% url 'Adminview' %}">Back</a>
+        </div>
+        
+    </header>
+  
+    
+      <section class="col-12 but text-center">
+        <div class="col-12 d-flex mm ">
+            <div class="col-6 m">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <button type="submit"><a href="{% url 'donatefood' %}"> Food_Donated</a></button>
+                </form>
+            </div>
+            <div class="col-6 m">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <button type="submit"><a href="{% url 'donatemoney' %}">Money_Donated</a></button>
+                </form>
+            </div>
+        </div> 
+        <div class="col-12 d-flex mm ">
+            <div class="col-6 m">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <button type="submit"><a href="{% url 'approved_ashrams' %}">Ashrams</a></button>
+                </form>
+            </div>
+            <div class="col-6 m">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <button type="submit"><a href="{% url 'approved_functionhalls' %}">Function_Halls</a></button>
+                </form>
+            </div>
+        </div> 
+      </section>
+  
+</body>
+</html>

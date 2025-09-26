@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functionhall Approval</title>
+</head>
+<body>
+    <h1>Functionhall Approval Requests</h1>
+    <ul>
+        {% for fun in Functionhall %}
+        <li>{{ fun.name }} - {{ fun.email }}
+            <a href="{% url 'approve_functionhall' fun.id %}">Approve</a>
+            <a href="{% url 'reject_functionhall' fun.id %}">Reject</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

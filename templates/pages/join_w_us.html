@@ -1,0 +1,208 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUNGRY HEARTS-join with us</title>
+
+  <style>
+    /* Style the "Login" link as a button */
+    .joinch1 a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      /*  transition: background-color 0.3s ease-out;*/
+    }
+
+    .joinch2 a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      /*  transition: background-color 0.3s ease-out;*/
+    }
+    .joinch4 a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      /*  transition: background-color 0.3s ease-out;*/
+    }
+    .join {
+      background-image: url('../static/assets/child123.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* Adjust the background size as needed */
+      background-position: center;
+      /* Center the background image */
+      height: 580px;
+      margin-top: 50px;
+      margin-left: 0px;
+      margin-right: 0px;
+
+    }
+
+    .joinch1 {
+
+      padding-top: 150px;
+      padding-left: 164px;
+
+    }
+
+    .joinch2 {
+
+
+      padding-top: 20px;
+      padding-left: 100px;
+    }
+
+    .joinch4 {
+
+
+      padding-top: 20px;
+      padding-left: 190px;
+    }
+
+    .typing-text {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      animation: typing-text 4s linear infinite;
+    }
+
+    @keyframes typing-text {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    /* Apply the cursor animation to a pseudo-element */
+    .typing-text::after {
+      content: "|";
+      position: absolute;
+      top: 0;
+      right: -8px;
+      /* Adjust the right position for spacing */
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="{% static 'css/handf.css' %}">
+</head>
+
+<body>
+
+  <header class="header" style="background-color: #fff; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);">
+    <div class="left-section">
+
+      <div class="don" style="display: flex; flex-direction: column; ">
+        <p style="font-size: 24px; padding-left: 75px;">
+
+          <span style="color: rgb(2, 117, 12); padding: 0%;margin-top: 5px;font-size: 25px;">Hungry</span>
+          <span style="color: rgb(52, 221, 5);padding: 0%;margin: 0%;font-size: 25px;">Hearts</span><br><span
+            style="font-size: 10px;padding-left: 2px;color: rgb(2, 117, 12);font-family: Verdana, Geneva, Tahoma, sans-serif;">feed
+            hunger.. </span><span
+            style="color: rgb(52, 221, 5);font-size: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"> with your
+            heart</span>
+        </p>
+
+      </div>
+    </div>
+    </div>
+    <nav class="nav" style="display: flex;padding-right: 2px;margin-right: 2px; font-size: 13px;">
+      <ul>
+        <li><a href="{% url 'Home' %}"><span style="color: rgb(2, 117, 12);">🏠H</span><span
+              style="color:rgb(4, 12, 1)">ome</span></a></li>
+        <li><a href="{% url 'about' %}"><span style="color: rgb(2, 117, 12);">👤A</span><span
+              style="color: rgb(1, 4, 1);">bout Us</span></a></li>
+        <li><a href="{% url 'services' %}"><span style="color: rgb(2, 117, 12);">👥O</span><span
+              style="color: rgb(4, 9, 2);">ur Services</span></a></li>
+        <span>
+          <li style="background:  rgb(222, 108, 1); display: inline-block;  "><a href="{% url 'donatep' %}"><span
+                style="color:rgb(18, 2, 13)">👤Donatefood</span></a></li>
+        </span>
+        <li><a href="{% url 'contact' %}"><span style="color: rgb(2, 117, 12);">📞C</span><span
+              style="color:rgb(8, 13, 6)">ontact Us</span></a></li>
+        <li><a href="{% url 'complaint' %}"><span style="color: rgb(2, 117, 12);">C</span><span
+              style="color: rgb(4, 9, 2);">omplaint</span></a></li>
+
+      </ul>
+
+
+    </nav>
+    <nav class="log" style="margin:0;padding-left:90px;">
+      <li><a href="{% url 'join_w_us' %}">JOIN WITH US</a></li>
+    </nav>
+    <nav class="log" style="margin:0;padding-right:10px;">
+      <li><a href="{% url 'alllogin' %}">LOG IN</a></li>
+    </nav>
+  </header>
+
+  <h1 class="typing-text"
+    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: brown; margin: 0px;margin-top: 20px;padding-bottom: 6px; font-size: 40px;padding-left: 10px;">
+    JOIN WITH US!!</h1>
+  <div class="join">
+    <div class="joinch1">
+      <nav>
+        <a href="{% url 'Fregister' %}">FUNCTION_HALL</a>
+      </nav>
+    </div>
+    <p style="  padding-left: 220px;padding-top: 10px;">--- or ---</p>
+    <div class="joinch2">
+      <nav>
+        <a href="{% url 'Vregister' %}">JOIN WITH US AS A VOLUNTEER</a>
+      </nav>
+    </div>
+    <p style="  padding-left: 220px;padding-top: 10px;">--- or ---</p>
+    <div class="joinch4">
+      <nav>
+        <a href="{% url 'register' %}">ASHRAM</a>
+      </nav>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="bottom"
+    style="background-image: url('../static/assets/dfnew-modified5.png');">
+    <div class="bot1" style="color: black;">
+      <a href="{% url 'about' %}">About Us</a></br></br>
+          <a href="{% url 'services' %}">Our Services</a><br><br>
+          <a href="{% url 'contact' %}">Contact Us</a>
+    </div>
+    <div class="bot2">
+      <h4>Follow Us on:</h4>
+      <ul class="social-icons">
+        <li><a href="https://www.instagram.com/your-instagram-page"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/your-facebook-page"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="mailto:youremail@example.com"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://twitter.com/your-twitter-page"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/your-youtube-page"><i class="fa fa-youtube"></i></a></li>
+      </ul></br></br>
+
+      <div class="don"><a href="{% url 'donatep' %}">Donate Now</a></a></div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

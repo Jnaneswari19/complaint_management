@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .header {
+            background-color: #fff;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+        }
+
+        .don {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-size: 24px;
+            display: flex;
+        }
+
+        .logo span {
+            font-size: 25px;
+        }
+
+        .logo .green-text {
+            color: rgb(2, 117, 12);
+        }
+
+        .logo .green-text-small {
+            font-size: 10px;
+        }
+
+        .logo .green-text-small, .logo .green-text {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav li {
+            margin-right: 15px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: rgb(2, 117, 12);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav a:hover {
+            background: #245990;
+            color: #fff;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav a.active {
+            background: #245990;
+            color: #fff;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .log li {
+            margin: 0;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" style="background-color: #fff; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);" >
+        <div class="left-section">
+    
+          <div class="don" style="display: flex; flex-direction: column; ">
+            <p style="font-size: 24px; padding-left: 75px;">
+             
+              <span style="color: rgb(2, 117, 12); padding: 0%;margin-top: 5px;font-size: 25px;">Hungry</span>
+              <span style="color: rgb(52, 221, 5);padding: 0%;margin: 0%;font-size: 25px;">Hearts</span><br><span style="font-size: 10px;padding-left: 2px;color: rgb(2, 117, 12);font-family: Verdana, Geneva, Tahoma, sans-serif;">feed hunger.. </span><span style="color: rgb(52, 221, 5);font-size: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"> with your heart</span>
+            </p>
+         
+          </div>
+        </div>
+        </div>
+        <nav class="nav" style="display: flex;padding-right: 2px;margin-right: 2px;">
+          <ul>
+            <li><a href="{% url 'Home' %}"><span style="color: rgb(2, 117, 12);">🏠H</span><span
+                  style="color:rgb(4, 12, 1)">ome</span></a></li>
+            <li><a href="{% url 'about' %}"><span style="color: rgb(2, 117, 12);">👤A</span><span
+                  style="color: rgb(1, 4, 1);">bout Us</span></a></li>
+            <li><a href="{% url 'services' %}"><span style="color: rgb(2, 117, 12);">👥O</span><span
+                  style="color: rgb(4, 9, 2);">ur Services</span></a></li>
+            <span>
+              <li style="background:  rgb(222, 108, 1); display: inline-block;  "><a
+                  href="{% url 'donatep' %}"><span style="color:rgb(18, 2, 13)">👤Donatefood</span></a></li>
+            </span>
+            <li><a href="{% url 'contact' %}"><span style="color: rgb(2, 117, 12);">📞C</span><span
+                  style="color:rgb(8, 13, 6)">ontact Us</span></a></li>
+            <li>
+                <!-- <li><a href="{% url 'complaint' %}"><span style="color: rgb(2, 117, 12);">C</span><span
+                    style="color: rgb(4, 9, 2);">omplaint</span></a></li> -->
+    
+          </ul>
+    
+    
+        </nav>
+        <nav class="log" style="margin:0;padding-left:90px;">
+            <li><a href="{% url 'join_w_us' %}">JOIN WITH US</a></li>
+          </nav>
+          <nav class="log" style="margin:0;padding-right:10px;">
+            <li><a href="{% url 'logins' %}">LOG IN</a></li>
+          </nav>
+      </header>
+
+    <script>
+        // Get the current page URL and add the 'active' class to the corresponding link
+        var currentPageUrl = window.location.pathname;
+        var navLinks = document.querySelectorAll('.nav a');
+        
+        navLinks.forEach(function (link) {
+            if (link.getAttribute('href') === currentPageUrl) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

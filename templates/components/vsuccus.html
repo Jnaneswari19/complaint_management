@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <style>
+        .header {
+  height: 70px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1px;
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2;
+  z-index: 100;
+  border-bottom-left-radius:30px ;
+  border-bottom-right-radius: 30px;
+ 
+}
+section{
+    height: 650px;
+}
+.m{
+    height: 40%;
+}
+.mm{
+    height: 20%;
+}
+    </style>
+</head>
+<body>
+    <section class="col-12">
+<div class="col-12 m"></div>
+<div class="col-12 mm">
+    <h1>Registered Successfully</h1>
+    <a href="{% url 'Vregister' %}"> <button>ok</button></a>
+</div>
+<div class="col-12 m"></div>
+         
+        </section>
+</body>
+</html>

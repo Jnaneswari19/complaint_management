@@ -1,0 +1,343 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <title>feedback</title>
+    <!-- <link rel="stylesheet" href="{% static 'css/handf.css' %}"> -->
+    <style>
+        .main{
+            height: 800px;
+        }
+      
+  * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .back_video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+
+        }
+
+        @media (min-aspect-ratio:16/9) {
+            .back_video {
+                width: 100%;
+                top: 8px;
+                bottom: 8px;
+            }
+        }
+
+        @media (max-aspect-ratio:16/9) {
+            .back_video {
+                width: auto;
+                height: 100%;
+            }
+        }
+        body, ul, li, a {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+   /* Style the header and navigation to provide sticky nav bar */
+  .header {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1px;
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    z-index: 100;
+    /* border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px; */
+   
+  }
+  
+  
+  
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: rgb(23, 2, 92);
+    /*box-shadow:0px 10px 10px rgba(0,0, 0, 0.6);*/
+  }
+  
+  .left-section  img {
+    height: 40px;
+  }
+  
+  .left-section h1 {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 50px;
+  }
+  
+   
+    
+    /* Style the Donate button */
+    
+  /* Add underline effect on navigation links when hovered */
+  .nav a {
+    position: relative;
+    color: inherit; /* To maintain original link color */
+  }
+  
+  .nav a::after {
+    content: "";
+    width: 0%;
+    display: block;
+    margin: auto;  
+   /* position: absolute;
+    /*bottom: -2px; /* Adjust as needed */
+    /*left: 0;
+    */
+    border-bottom: 2px solid rgb(77, 230, 6); 
+    height: 2px;
+    /*background-color: rgb(77, 230, 6); /* Initial color (you can change this) */
+    transition:  0.3s ;
+  }
+  
+  .nav a:hover::after {
+    width: 100%;
+   }
+  /* Style the "Login" link as a button */
+  .log a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:greenyellow;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+  /*  transition: background-color 0.3s ease-out;*/
+  }
+  
+  /**/*/*/**/
+  
+  .m{
+    border-style:double;
+    border-color:rgb(96, 96, 96);
+    padding: 5px;
+  }
+  .m:hover{
+    scale: 105%;
+    box-shadow: 20px 20px 50px 15px rgb(93, 92, 92);
+    
+    /* box-shadow: 20px 20px 50px 30px rgb(228, 114, 228) inset; */
+
+  }
+    
+    </style>
+</head>
+<body>
+    <!-- <header class="col-12 d-flex">
+        <div class="col-6 mt-2 ">
+            <img style="margin-left: 10px;" src="" alt="kite"><sub><P style="margin-left: 40px;">KIET ENGINEERING KKD</P></sub>
+        </div>
+        <div class="col-6 d-flex justify-content-evenly">
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+        </div>
+
+    </header> -->
+    <header class="header" style="background-color: #fff; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);" >
+        <div class="left-section">
+    
+          <div class="don" style="display: flex; flex-direction: column; ">
+            <p style="font-size: 24px; padding-left: 75px;">
+             
+              <span class="pt-2"><img src="" alt="Kiet"></span>
+             <br><span style="font-size: 10px;padding-left: 2px;color: rgb(2, 117, 12);font-family: Verdana, Geneva, Tahoma, sans-serif;">feed hunger.. </span><span style="color: rgb(52, 221, 5);font-size: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"> with your heart</span>
+            </p>
+         
+          </div>
+        </div>
+        </div>
+        <nav class="nav" style="display: flex;padding-right: 2px;margin-right: 2px; font-size: 15px;">
+          <ul>
+            <li><a href="{% url 'Home' %}"><span style="color: rgb(2, 117, 12);">🏠H</span><span
+                  style="color:rgb(4, 12, 1)">ome</span></a></li>
+            <li><a href="{% url 'about' %}"><span style="color: rgb(2, 117, 12);">👤A</span><span
+                  style="color: rgb(1, 4, 1);">bout Us</span></a></li>
+            
+            </span>
+            <li><a href="{% url 'contact' %}"><span style="color: rgb(2, 117, 12);">📞C</span><span
+                  style="color:rgb(8, 13, 6)">ontact Us</span></a></li>
+            <li>
+                <!-- <li><a href="{% url 'complaint' %}"><span style="color: rgb(2, 117, 12);">C</span><span
+                    style="color: rgb(4, 9, 2);">omplaint</span></a></li> -->
+    
+          </ul>
+    
+    
+        </nav>
+        <nav class="log" style="margin:0;padding-left:90px;">
+            <li><a href="{% url 'join_w_us' %}">STUDENT_LOGIN</a></li>
+          </nav>
+          <nav class="log" style="margin:0;padding-right:10px;">
+            <li><a href="{% url 'logins' %}">LOG IN</a></li>
+          </nav>
+      </header>
+
+      <section  class="col-12 text-center main">
+        <marquee style="height: 100%;" behavior="" direction="up">
+          <div id="notificationCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="center-notification-container">
+                        <div class="notification-container">
+                            <div class="notification">
+                                <div class="notification">
+                                    <h3>Notification 1</h3>
+                                    <p>Reminder: The college library will be closed for maintenance from Monday to Wednesday next week. Please plan your study schedule accordingly.</p>
+                                </div>
+                                <div class="notification">
+                                    <h3>Notification 2</h3>
+                                    <p>Attention students: The deadline for course registration for the upcoming semester is approaching. Ensure you complete your registration before the deadline to avoid any issues.</p>
+                                </div>
+                                <div class="notification">
+                                    <h3>Notification 3</h3>
+                                    <p>Important notice: The college cafeteria will be undergoing renovations starting next month. Alternative dining arrangements will be made available during this period.</p>
+                                </div>
+                                <div class="notification">
+                                    <h3>Notification 4</h3>
+                                    <p>Reminder: The annual sports day event will take place on the college grounds next Friday. All students are encouraged to participate and show their support.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#notificationCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#notificationCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+      </marquee>
+        
+        <video autoplay loop muted plays-inline class="back_video">
+            <source src="{% static 'assets/feed.mp4' %}" type="video/mp4">
+        
+        </video>
+
+        <!-- <button> <a href="{% url 'complaintbuttons' %}">complaint</a> </button> -->
+    </section>
+
+    <section class="col-12 d-flex justify-content-evenly">
+
+
+        
+            <div class="col-3 m">
+                <img src="{% static '/assets/b.jpg' %}" alt="College Content 1" style="width: 100%; height: auto;; ">
+                <p>Welcome to our college! We pride ourselves on providing a nurturing environment for students to excel academically and personally. Our dedicated faculty and staff are committed to your success.</p>
+            </div>
+            <div class="col-3 m">
+                <img src="{% static '/assets/b.jpg' %}" alt="College Content 2" style="width: 100%; height: auto;">
+                <p>At our college, we believe in fostering a culture of innovation and critical thinking. Through our diverse range of courses and extracurricular activities, we aim to prepare our students for the challenges of the modern world.</p>
+            </div>
+            <div class="col-3 m">
+                <img src="{% static '/assets/b.jpg' %}" alt="College Content 3" style="width: 100%; height: auto;">
+                <p>Joining our college means becoming part of a vibrant community of learners. Whether you're interested in the arts, sciences, or technology, you'll find opportunities to explore your passions and develop new skills.</p>
+            </div>
+        
+    </section>
+    <!-- <section class="col-12 d-flex text-center" style="z-index: 1;">
+      <div class="col-2"></div>
+      <div class="c0l-8">
+        <marquee behavior="" direction="up">
+          <div id="notificationCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="center-notification-container">
+                        <div class="notification-container">
+                            <div class="notification">
+                                <div class="notification">
+                                    <h3>Notification 1</h3>
+                                    <p>Reminder: The college library will be closed for maintenance from Monday to Wednesday next week. Please plan your study schedule accordingly.</p>
+                                </div>
+                                <div class="notification">
+                                    <h3>Notification 2</h3>
+                                    <p>Attention students: The deadline for course registration for the upcoming semester is approaching. Ensure you complete your registration before the deadline to avoid any issues.</p>
+                                </div>
+                                <div class="notification">
+                                    <h3>Notification 3</h3>
+                                    <p>Important notice: The college cafeteria will be undergoing renovations starting next month. Alternative dining arrangements will be made available during this period.</p>
+                                </div>
+                                <div class="notification">
+                                    <h3>Notification 4</h3>
+                                    <p>Reminder: The annual sports day event will take place on the college grounds next Friday. All students are encouraged to participate and show their support.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#notificationCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#notificationCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+      </marquee>
+        
+        <script>
+            
+            var carousel = new bootstrap.Carousel(document.getElementById('notificationCarousel'), {
+                interval: 3000, 
+                pause: 'hover', 
+                wrap: true 
+            });
+        </script>
+        
+        
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+            <img src="{% static '/assets/th10.jpeg' %}" alt="College Content 3" style="max-width: 100%; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+            <button onclick="window.location.href='/register'" class="btn btn-primary" style="padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; background-color: #007bff; color: #fff; border: none; transition: all 0.3s ease;">Register</button>
+        </div>
+        
+           
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            
+        
+        
+      </div>
+      <div class="col-2"></div>
+      </section> -->
+
+</body>
+</html>

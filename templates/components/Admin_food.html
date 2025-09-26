@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food_Donated_Data</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Food_Donated_Data</h1>
+    
+    <table style="border-collapse: collapse; width: 100%;">
+        <tr style="background-color: #f0f0f0;">
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Name</th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Email</th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Number</th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Quantity</th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Address</th>
+        </tr>
+        {% for donation in donations %}
+        <tr style="border: 1px solid #ddd;">
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">{{ donation.name }}</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">{{ donation.email }}</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">{{ donation.number }}</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">{{ donation.Quantity }}</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">{{ donation.address }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
